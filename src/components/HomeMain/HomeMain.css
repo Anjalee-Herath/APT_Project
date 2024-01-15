@@ -1,0 +1,132 @@
+.main-con {
+    width: 100%;
+    height: 90vh;
+    background-color: antiquewhite;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+  }
+  
+  img {
+    object-fit: cover;
+  }
+  
+  .text-div {
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    width: 80vw;
+  }
+  .main-topic-main {
+    color: #131313;
+    font-weight: bolder;
+    font-size: 6vw;
+    animation: from-top 2000ms forwards cubic-bezier(0.65, 0.05, 0.36, 1);
+  }
+  
+  .sub-topic {
+    color: #f5f1f1;
+    font-weight: 400;
+    font-size: 3vw;
+    animation: from-top 2000ms forwards cubic-bezier(0.65, 0.05, 0.36, 1);
+  }
+  .btn-div {
+    margin-top: 24px;
+    animation: from-bottom 2000ms forwards cubic-bezier(0.65, 0.05, 0.36, 1);
+  }
+  .btn {
+    margin-right: 24px;
+    width: 12vw;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1rem;
+    /* min-width: 200px; */
+  }
+  .btn-primary {
+    background-color: #706233;
+    border: none;
+  }
+  .btn-outline-primary {
+    color: #00587a;
+    border: 1px solid #00587a;
+  }
+  
+  @media only screen and (max-width: 990px) {
+    .text-div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 12px;
+      left: 0;
+    }
+    .main-con {
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .text-div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 25%;
+    }
+  }
+  
+  @media only screen and (max-width: 550px) {
+    .btn-div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .btn {
+      margin-top: 12px;
+      margin-right: 0px;
+    }
+    .main-con {
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .text-div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 8%;
+    }
+    .main-topic-main {
+      font-size: 8vw;
+    }
+    .sub-topic {
+      font-size: 5vw;
+    }
+  }
+  @keyframes from-top {
+    0% {
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(-30%);
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes from-bottom {
+      0% {
+          visibility: hidden;
+          opacity: 0;
+          transform: translateY(15%);
+      }
+      100% {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+      }
+  }
+  

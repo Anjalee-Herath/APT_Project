@@ -1,0 +1,41 @@
+.about_section {
+    width: 100%;
+    float: left;
+    padding-bottom: 90px;
+}
+
+.layout_padding {
+    padding-top: 90px;
+    padding-bottom: 0px;
+}
+.read_bt {
+    width: 140px;
+  }
+  .read_bt {
+    width: 140px;
+  }
+  .highest_text {
+    font-size: 20px;
+  }
+  .read_bt a{
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    background-color: #0f3157;
+    color: #ffffff;
+    padding: 10px 0px;
+    text-align: center;
+}
+.read_bt a:hover{
+    background-color: #048a92;
+    color: #000000;
+}
+
+.about_section.layout_padding{
+    padding-left: 120px;
+}
+
+.care_taital{
+  padding-right: 150px;
+}
+
