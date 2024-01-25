@@ -15,3 +15,12 @@ class Property(models.Model):
 
     def __str__(self):
         return self.title
+    
+
+class users(models.Model):
+    name=models.CharField(max_length=255)  
+    email=models.CharField(max_length=255)  
+    nic=models.CharField(max_length=255)  
+    role=models.CharField(max_length=255)  
+    phoneno=models.IntegerField()  
+    address=models.CharField(max_length=255)  

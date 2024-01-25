@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'realestate',
+        'NAME': '`realestate`',
         'USER':'root',
         'PASSWORD':'',
         'HOST':'localhost',
@@ -90,6 +90,11 @@ DATABASES = {
 }
 
 CORS_ORIGIN_WHITELIST = ['http://localhost:3000']
+
+
+import dj_database_url
+
+DATABASES['default'] = dj_database_url.parse('mysql://root@localhost/realestate')
 
 
 # Password validation
