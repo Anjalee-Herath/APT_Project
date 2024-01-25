@@ -8,13 +8,20 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import SubmitProperty from "./components/SubmitProperty/SubmitProperty";
 import AllProperties from "./components/AllProperties/AllProperties";
+import Dashboard from "./pages/admin/Dashboard";
+import Property from "./pages/admin/Property";
+import UserPage from "./pages/admin/UserPage";
+
 
 function App() {
   return (
     <div>
-      <BrowserRouter>
-        <Navbar />
+  
+        {/* <Navbar /> */}
         <Routes>
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/property" element={<Property />} />
+          <Route path="/user" element={<UserPage />} />
           <Route path="/" element={<Home />} />
           <Route path="/submitProperty" element={<SubmitProperty />} />
           <Route path="/allProperties" element={<AllProperties />} />
@@ -22,8 +29,7 @@ function App() {
           <Route path="/properties" element={<Properties />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Footer />
-      </BrowserRouter>
+        {/* <Footer /> */}
     </div>
   );
 }
